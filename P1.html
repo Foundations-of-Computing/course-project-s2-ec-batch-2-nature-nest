@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>naturenest.web</title>
         <link rel="stylesheet" href="P1.css">
@@ -40,11 +40,11 @@
                         <p class="pprice">
                             &#8377; 299 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/fishbone-cactus'" class="pdetails">
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/fishbone-cactus'" class="pdetails">
                             Product details
-                        
-                           
                         </button>
+                        
+                        
                     </div>
 
                 </div>
@@ -60,10 +60,8 @@
                         <p class="pprice">
                             &#8377; 159 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/money-plant'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/money-plant'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
                     </div>
 
@@ -80,10 +78,8 @@
                         <p class="pprice">
                             &#8377; 399 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/pothos-varieties'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/pothos-varieties'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
                     </div>
 
@@ -100,10 +96,8 @@
                         <p class="pprice">
                             &#8377; 179 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/yucca-plant-guide'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/yucca-plant-guide'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
                     </div>
 
@@ -123,11 +117,10 @@
                         <p class="pprice">
                             &#8377; 298 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/how-to-grow-dragon-fruit-from-seeds-and-cuttings'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/how-to-grow-dragon-fruit-from-seeds-and-cuttings'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
+                        
                     </div>
 
                 </div>
@@ -143,11 +136,11 @@
                         <p class="pprice">
                             &#8377; 320 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.picturethisai.com/care/Dracaena_fragrans__Warneckii_.html'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.picturethisai.com/care/Dracaena_fragrans_'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
+                        
+                        
                     </div>
 
                 </div>
@@ -163,11 +156,10 @@
                         <p class="pprice">
                             &#8377; 110 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/how-to-propagate-snake-plant'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/how-to-propagate-snake-plant'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
+                       
                     </div>
 
                 </div>
@@ -183,11 +175,11 @@
                         <p class="pprice">
                             &#8377; 599 INR 
                         </p>
-                        <button type="button" onclick="location.href='https://www.masterclass.com/articles/dracaena-plant-guide'" class="pdetails"><a>
+                        <button type="button" onclick="checker(event); if (event.defaultPrevented) return; location.href='https://www.masterclass.com/articles/dracaena-plant-guide'" class="pdetails">
                             Product details
-                        </a>
-                           
                         </button>
+                       
+                       
                     </div>
 
                 </div>
@@ -201,6 +193,15 @@
             </div>
 
         </section>
+
+        <script>
+            function checker(event) {
+                var result = confirm('Moving to other webpage, Are you sure ?');
+                if (result == false) {
+                    event.preventDefault();
+                }
+            }
+        </script>
 
     </body>
 </html>
